@@ -14,6 +14,8 @@ public class LearnCollections {
 		System.out.println("-------------------");
 		Collections.sort(Students,Collections.reverseOrder());
 		iterateArrayListUsingIterator(Students);
+		System.out.println("-------------------");
+		
 	}
 	
 	public static List<String> createArrayList() {
