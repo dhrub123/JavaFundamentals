@@ -1,6 +1,7 @@
 package com.dhruba.java.collection.list.shipment;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
@@ -49,8 +50,11 @@ public class Shipment implements Iterable<Product> {
 		products.sort(Product.BY_WEIGHT);
 		//find split point
 		int splitPoint = findSplitPoint();
+		
 		//create 2 subviews of list
-		lightVanproducts = products.subList(0,splitPoint);
+		//lightVanproducts = products.subList(0,splitPoint);
+		lightVanproducts = Collections.unmodifiableList(products.subList(0,splitPoint)); //This will let us a=maintain integrity of shipment
+		//any external entity wil not be able to modify it any longer
 		heavyVanproducts = products.subList(splitPoint,products.size());
 	}
 	
