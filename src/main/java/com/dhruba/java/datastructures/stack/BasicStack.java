@@ -17,10 +17,7 @@ public class BasicStack<X> implements Stack<X> {
 		this.data = (X[]) new Object[1000];
 		stackPointer = 0;
 	} 
-	
-	/* (non-Javadoc)
-	 * @see com.dhruba.java.datastructures.stack.Stack#push(X)
-	 */
+		
 	@Override
 	public void push(X newItem) {
 		//++ is post increment, new item gets assigned 
@@ -28,9 +25,6 @@ public class BasicStack<X> implements Stack<X> {
 		data[stackPointer++] = newItem;
 	}
 	
-	/* (non-Javadoc)
-	 * @see com.dhruba.java.datastructures.stack.Stack#pop()
-	 */
 	@Override
 	public X pop() {
 		//we are pre decrementing the stackpointer and then
@@ -41,10 +35,7 @@ public class BasicStack<X> implements Stack<X> {
 		}
 		return data[--stackPointer];
 	}
-	
-	/* (non-Javadoc)
-	 * @see com.dhruba.java.datastructures.stack.Stack#contains(X)
-	 */
+		
 	@Override
 	public boolean contains(X item) {
 		boolean found = false;
@@ -56,10 +47,7 @@ public class BasicStack<X> implements Stack<X> {
 		}
 		return found;
 	}
-	
-	/* (non-Javadoc)
-	 * @see com.dhruba.java.datastructures.stack.Stack#access(X)
-	 */
+		
 	@Override
 	public X access(X item) {
 		while(stackPointer>0) {
@@ -73,9 +61,6 @@ public class BasicStack<X> implements Stack<X> {
 		throw new IllegalStateException("Could not find item in stack " + item);
 	}
 	
-	/* (non-Javadoc)
-	 * @see com.dhruba.java.datastructures.stack.Stack#size()
-	 */
 	@Override
 	public int size() {
 		return stackPointer;
