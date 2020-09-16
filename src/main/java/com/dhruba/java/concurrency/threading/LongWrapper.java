@@ -10,7 +10,9 @@ public class LongWrapper {
 	}
 
 	public long getL() {
-		return l;
+		synchronized (key) {
+			return l;
+		}
 	}
 
 	/*
