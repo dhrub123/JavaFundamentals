@@ -1,0 +1,7 @@
+12 10 0x00f8
+ello World
+Hello World
+Hello World
+Man walked on the moon on: 07 20 1969Hello World
+Man walked on the moon on: 07 20 1969Man walked on the moon on: July Sunday 1969Hello World
+Man walked on the moon on: 07 20 1969Man walked on the moon on: July Sunday 1969
