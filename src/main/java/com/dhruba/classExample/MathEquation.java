@@ -46,6 +46,14 @@ public class MathEquation {
 	public double getResult() {
 		return result;
 	}
+	
+	public static MathEquation create(double leftVal, double rightVal, char opcode) {
+		MathEquation equation = new MathEquation();
+		equation.setLeftVal(leftVal);
+		equation.setRightVal(rightVal);
+		equation.setOpcode(opcode);
+		return equation;
+	}
 
 	public void execute(double leftVal, double rightVal) {
 		this.leftVal = leftVal;
@@ -75,7 +83,7 @@ public class MathEquation {
 			result = rightVal!= 0 ? leftVal/rightVal : 0.0d;
 			break;
 		default:
-			System.out.println("Invalid Opcode");
+			System.out.println("Invalid Opcode" + opcode);
 			result = 0.0d;
 			break;
 		}
