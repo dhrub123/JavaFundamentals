@@ -14,6 +14,8 @@ public class ClassExample {
 			System.out.println(equation.getResult());
 		}
 		
+		System.out.println("Average result = " + MathEquation.getAverageResult());
+		
 		
 	//		public static MathEquation create(double leftVal, double rightVal, char opCode) {
 	//		MathEquation equation = new MathEquation(leftVal, rightVal, opCode);

@@ -1,4 +1,4 @@
-package com.dhruba.classExample.otherdatatypesandexceptions;
+package com.dhruba.classExample.otherdatatypesandexceptionsandenums;
 
 import com.dhruba.classExample.errorsandexceptions.InvalidStatementException;
 import com.dhruba.classExample.inheritance.Adder;

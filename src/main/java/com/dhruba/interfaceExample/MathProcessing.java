@@ -6,6 +6,9 @@ public interface MathProcessing {
 	String getKeyword();
 	char getSymbol();
 	double doCalculation(double leftVal, double rightVal);
+	default String getFormattedOutput() {
+		return null;
+	}
 	
 
 }

@@ -7,6 +7,11 @@ public class MathEquation {
 	private char opcode;
 	private double result;
 	
+	private static int numberOfCalculations;
+	private static double sumOfResults;
+	
+	public MathEquation() {};
+	
 	public MathEquation(char opcode) {
 		this.opcode = opcode;
 	}
@@ -16,8 +21,6 @@ public class MathEquation {
 		this.leftVal = leftVal;
 		this.rightVal = rightVal;
 	}
-	
-	public MathEquation() {};
 	
 	public double getLeftVal() {
 		return leftVal;
@@ -87,6 +90,13 @@ public class MathEquation {
 			result = 0.0d;
 			break;
 		}
+		
+		numberOfCalculations++;
+		sumOfResults+= result;
+	}
+	
+	public static double getAverageResult() {
+		return sumOfResults/numberOfCalculations;
 	}
 
 }
