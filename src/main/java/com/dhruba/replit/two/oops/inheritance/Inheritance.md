@@ -1,0 +1,4 @@
+all non private members are inherited. When we create a custom class in Java, it inherits all the non private members of the Java object class by default. The java object class has important methods like getClass() - returns runtime class of the object, toString() - string representation of object, equals() - is true only if the 2 objects being compared are same objects and hashcode(). The general contract is if 2 objects are equal, they must also have same hashcodes. So it is recommended to override hashcode() in case we override the equals().
+
+Super keyword can access variables and methods of superclass like super.topSpeed and super.drive()
+super() can also be used to call superclass constructor.

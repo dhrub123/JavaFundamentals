@@ -1,0 +1,10 @@
+Executors handle thread management. 
+Task is a logical unit of work independent of other tasks. It represents object of a class implementing runnable.
+
+Executor Framework executes logical tasks.
+There are 3 interfaces - 
+Executor Interface(forms the basis of java aync task execution framework - belongs to java.util.concurrent.Executor), ExecutorService and ScheduledExecutorService.
+
+If thread is implemented manually, there can be infinite number of threads being spawned resulting in unbounded threads.
+
+Threadpools are implementation of executor interface and its sub interfaces.

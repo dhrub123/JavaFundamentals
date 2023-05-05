@@ -1,0 +1,1 @@
+Datahiding is acheived through encapsulation and abstraction. Encapsulation - make variables private and methods or constructors which accesses those variables public with conditions.
